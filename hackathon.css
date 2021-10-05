@@ -1,259 +1,137 @@
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+.Header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(back.jpg);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
 
 }
-.main{
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(27, 171, 228);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fa4234;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
     width: 100%;
-    background-image: url(image.jpeg);
+} 
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-family: monospace;
+    font-size: 80px;
+    color: rgb(243, 97, 12);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: rgb(255, 241, 248);
+}
+.start{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.start h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.start p{
+    color: rgb(12, 12, 15);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 20px;
+}
+.card{
+    color: blueviolet;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 180px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    transition: 0.5s;
 }
-.navbar{
-    width: 1200px;
-    height: 75px;
-    padding-left: 25px;
+.card1{
+    background-image: url('tools.jpg');
 }
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
+.card2{
+    background-image: url('colo.jpg');
 }
-.logo{
-    color: rgb(245, 81, 21);
-    font-size: 30px;
-    font-family: 'Times New Roman';
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
+.card3{
+    background-image: url('mission.jpg');
 }
-.logo:hover{
-    color: whitesmoke;
+.card4{
+    background-image: url('stars.jpg');
 }
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
+.card:hover{
+    transform: translateY(-10px);
 }
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+.card h5{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 5px #999;
+    font-size: 25px;
+    background-color: rgb(245, 81, 25);
+    border-radius: 5px;
 }
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 18px;
-}
-ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-ul li a:hover{
-    color: rgb(245, 81, 21);
-}
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid rgb(245, 81, 21);
-    margin-top: 13px;
-    color: whitesmoke;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.btn{
-    font-family: 'Times New Roman';
-    width: 100px;
-    height: 40px;
-    background: rgb(245, 81, 21);
-    border: 2px solid rgb(245, 81, 21);
-    margin-top: 13px;
-    color: black;
-    font-size: 18px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.btn:focus{
-    outline: none;
-}
-.search:focus{
-    outline: none;
-}
-
-.content{
-    width: 1200px;
-    height: auto;
-    margin: 30px;
-    color: whitesmoke;
-    position: relative;
-    padding-top: 30px;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: 'Times New Roman';
-    letter-spacing: 1.2px;
-    line-height: 30px;
-    font-size: 18px;
-}
-
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-
-}
-
-.content .cn{
-    width: 110px;
-    height: 30px;
-    background: rgb(245, 81, 21);
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background: whitesmoke;
-}
-
-.content span{
-    color: rgb(245, 81, 21);
-    font-size: 60px;
-}
-
-.form{
-    width: 250px;
-    height: 350px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    top: 50px;
-    left: 1150px;
-    border-radius: 10px;
-    padding: 25px;
-    position: absolute;
-}
-
-.form h2{
-    width: 210px;
-    height: 22px;
-    font-family: 'Times New Roman';
-    text-align: center;
-    color: rgb(245, 81, 21);
-    font-size: 22px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input{
-    width: 240px;
-    height: 33px;
-    background: transparent;
-    border-bottom: 1px solid rgb(245, 81, 22);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: whitesmoke;
+.card p{
+    color: rgb(247, 245, 244);
     font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
 }
-.form input:focus{
-    outline: none;
+.col p{
+    font-size: 15px;
 }
-::placeholder{
-    color: whitesmoke;
-    font-family: 'Times New Roman';
-}
-.btnn{
-    width: 230px;
-    height: 35px;
-    background: rgb(245, 81, 22);
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: whitesmoke;
-    transition: 0.4s ease;
-}
-.btnn:hover{
-    background: whitesmoke;
-    color: rgb(245, 82, 22);
-}
-.btnn a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-}
-.form .link{
-    font-family: 'Times New Roman';
-    font-size: 16px;
-    padding-top: 20px;
+.col{
     text-align: center;
-}
-.form .link a{
-    text-decoration: none;
-    color: rgb(245, 81, 22);
-}
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.icons a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.icons ion-icon{
-    color: whitesmoke;
-    font-size: 27px;
-    padding-left: 17px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-.icons ion-icon:hover{
-    color: rgb(245, 81,22 );
-}
-.nam{
-    padding-top: 70px;
+    position: absolute;
+    top: 50%;
+    padding-left: 180px;
 }
