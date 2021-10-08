@@ -1,1 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+.Header{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(back.jpg);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
 
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(250, 136, 7);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #08ddba;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+} 
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-family: monospace;
+    font-size: 80px;
+    color: rgb(243, 97, 12);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: rgb(255, 241, 248);
+}
+.motiv{
+    padding-top: 50px;
+    padding: 50px;
+}
+.motiv h1{
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.motiv h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(15, 56, 236);
+}
+.motiv li{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    color: rgb(2, 10, 8);
+    font-size: 20px;
+}
+.hist{
+    padding-top: 50px;
+    padding: 50px;
+    background-image: url(stars.jpg);
+}
+.hist h1{
+    margin: 20px;
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.hist li{
+    margin: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+}
+.hist details{
+    color: rgb(255, 255, 255);
+}
+.hist summary{
+    margin: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+}
+.hist p{
+    margin: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    color: rgb(19, 235, 163);
+    font-size: 20px;
+}
+.traj{
+    padding-top: 50px;
+    padding: 50px;
+}
+.traj h1{
+    margin: 20px;
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.traj h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(15, 56, 236);
+}
+.traj li{
+    margin-left: 20px;
+    font-family: monospace;
+    color: rgb(2, 10, 8);
+    font-size: 20px;
+}
+.traj p{
+    margin: 20px;
+    padding-top: 0px;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.orbit{
+    padding-top: 50px;
+    padding: 50px;
+}
+.orbit h1{
+    margin: 20px;
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.orbit img{
+    width: 100%;
+    height: 100%;
+}
+.worbit{
+    padding-top: 50px;
+    padding: 50px;
+}
+.worbit h1{
+    margin: 20px;
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.worbit img{
+    width: 100%;
+    height: 100%;
+}
+.launch{
+    padding-top: 50px;
+    padding: 50px;
+    background-image: url(stars.jpg);
+}
+.launch h1{
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.launch h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(15, 56, 236);
+}
+.launch h3{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    color: rgb(89, 117, 196);
+}
+.launch li{
+    margin-left: 20px;
+    font-family: monospace;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+}
+.launch p{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.envi{
+    padding-top: 50px;
+    padding: 50px;
+}
+.envi h1{
+    font-family: monospace;
+    color: rgb(248, 10, 10);
+    text-align: center;
+    font-size: 40px;
+}
+.envi h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(15, 56, 236);
+}
+.envi li{
+    margin-left: 20px;
+    font-family: monospace;
+    color: rgb(2, 10, 8);
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.wor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.loc{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.loc:nth-child(2), .loc:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 300px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.loc h3{
+     width: fit-content;
+     margin-bottom: 40px;
+     position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+     color: white;
+}
+.top h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    width: 80%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copy{
+    font-size: 15px;
+    text-align: center;
+}
+
+.under{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.under span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
